@@ -3,4 +3,11 @@ install:
 - mvn install
 jdk:
 - oraclejdk8
-
+deploy:
+  provider: heroku
+  api_key:
+    secure: YI/hxqCVLWHrprPIyqHWhH08VcId1HlL0J5oNDmh9Y32RsAzeUEoyDFMQ/83kqQDh/n9wR0BM++s9Q6jcawS0uH0D6nW/xeVTFKsykJAVjp3MH5Rhe2/D42WOOzn0NsViZU3Zzg67V2JrLP+s+csFFTa1HjDngwQeNbmmEGta9L370cgFANHgpSEIGIclTwn6A59Ab/KMfLQ/KU6AEI2HITHjPFQhMpx58iWGNwNH2u+mpWghbGmkHSJhiNTauYg3OsE4oBA4RuwLxtQzezarx92PuHSWRMKPkBmlqDt98r/oU0hxDr+9UFkqHLsN+nHceaKXn51fFjFRgwvJiqoRi2Jm0LSybNFsI4Z7iqKxgT3cLNf46mrsqZYx8wJmTSYxLkW4ZfpkCsZbapDCOCsQQdbHj5I7bJLkF9uGu4pkVnE7jiefCebEQp2CASrcy9d6Tpy3l1nFzgut/gjxzEzaFT+uvYmFaY+FK7KNftq6Myvld2DCbullN0n0ljd9LZBE8R5KwxoV0N5UkAIvufdI3IrZzs1CpZjS32grvVtxIYaeHFddztgJBQwdZgHTL7xnv8miEN6wVhLa2//F3uxvKKIMP7lcIKh23l9U+7HMIFPiEsEe8ocQJA7GSeH7sHotOFDJWKbPYiJyzR/Q0XnxyBYcbSqr0pMS0nGo45JYVY=
+  app: ruiyang-addressbook
+  on:
+    repo: Rayseus/addressbook
+    branch: todo_tasks
